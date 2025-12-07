@@ -1,19 +1,5 @@
 function [txList, occ] = macCV2X_step(Queues, Nodes, State, cfg)
-% MACCV2X_STEP — Emulación mínima de C-V2X PC5 (SB-SPS abstracto)
-% Cada nodo reserva de forma semipersistente un "slot" periódico para TX.
-% En el borde de slot puede enviar a lo sumo 1 paquete (prioriza DENM).
-% Ocasionalmente (prob. pResel) reselecciona el offset del slot (SB-SPS).
-%
-% Entradas mínimas:
-%   Queues(i).pkts(j): id,type,tec('cv2x'),t_enq,txNode,lenB
-%   State.t, State.dt, State.spec.MHz_cv2x
-%   cfg.slot_cv2x (duración slot, por defecto 0.1 s)
-%   cfg.pResel    (prob. reselección por slot, por defecto 0.2)
-%   cfg.cap_pps_10MHz (para occ aprox; por defecto 220)
-%
-% Salidas:
-%   txList: array de struct con campos id,type,tec,txNode,t_tx
-%   occ   : ocupación aprox. = (#tx por slot) / (capacidad por slot)
+
 
 % ---- parámetros y defensas ----
 if ~isfield(State,'t') || ~isfield(State,'dt')
