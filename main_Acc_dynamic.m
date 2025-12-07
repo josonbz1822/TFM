@@ -1,14 +1,5 @@
 function main_aim3_dynamic()
-% MAIN_AIM3_DYNAMIC
-% Aim-3: evitar la infrautilización del espectro ajustando la carga entre 11p y C-V2X.
-% - Escenario: escenario.m (CAM + DENM).
-% - MAC: mac80211p_step.m, macCV2X_step.m (los que ya usas para PDR).
-% - Métricas:
-%     * Ocupación media de canal (por tec. y total).
-%     * Δocc = |Occ_11p - Occ_CV2X|.
-% - Condición de éxito:
-%     * OccTot >= 0.7  (línea roja).
-%     * Δocc  <= 0.3  (línea roja).
+
 
 clc; close all;
 
