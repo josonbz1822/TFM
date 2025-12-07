@@ -1,6 +1,5 @@
 elfunction main_pdr_dynamic()
-% MAIN_PDR_DYNAMIC — Escenario + MACs + controlador dinámico orientado a 95% PDR.
-% Versión con saltos grandes (hasta 10 MHz), cuantización 2 MHz y extremos 2/18 MHz.
+
 
 clc; close all;
 
