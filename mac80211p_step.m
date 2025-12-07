@@ -1,17 +1,5 @@
 function [txList, occ] = mac80211p_step(Queues, Nodes, State, cfg)
-% MAC80211P_STEP  — Emulación mínima de 802.11p (CSMA/CA abstracto)
-% Selecciona transmisiones "oportunistas" por paso de simulación limitadas
-% por una capacidad proporcional al ancho de banda 11p.
-% Prioriza DENM > CAM y reparte entre nodos (máx. 1 por nodo y paso).
-%
-% Entradas mínimas:
-%   Queues(i).pkts(j): struct con id,type,tec('11p'),t_enq,txNode,lenB
-%   State.dt, State.t, State.spec.MHz_11p
-%   cfg.cap_pps_10MHz (opc, por defecto 220)
-%
-% Salidas:
-%   txList: array de struct con campos id,type,tec,txNode,t_tx
-%   occ   : estimación de ocupación usada este paso (0..1)
+
 
 % ---- parámetros y defensas ----
 if ~isfield(State,'dt'), error('State.dt requerido'); end
