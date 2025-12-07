@@ -6,7 +6,6 @@ function [Msgs, Veh, cfg] = escenario()
 % • Zona escolar (más carga CAM en un intervalo temporal).
 % • Evento VRU (peatón/ciclista) cerca del origen.
 % • Evento de frenazo con vehículos próximos al origen.
-% • Generación de CAM y DENM (solo timeline y posición, sin MAC ni canal).
 %
 % Salidas:
 %   Msgs : tabla [t, id, type, txNode, x, y]
