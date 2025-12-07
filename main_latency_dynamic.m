@@ -1,14 +1,5 @@
 function main_latency_dynamic()
-% MAIN_LATENCY_DYNAMIC
-% Versión dinámica equivalente a main_pdr_dynamic, pero midiendo
-% Latencia P95 y Jitter P95 para mensajes DENM.
-%
-% - Usa escenario.m para generar CAM/DENM.
-% - Usa mac80211p_step.m y macCV2X_step.m como PHY-MAC abstractos.
-% - Controlador adapta el split 11p / C-V2X para intentar cumplir:
-%       Latencia P95 <= 100 ms
-%       Jitter   P95 <= 40 ms
-%   dando prioridad a los DENM.
+
 
 clc; close all;
 
